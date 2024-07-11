@@ -1,0 +1,109 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(fonts.css);
+@import url(variables.css);
+
+
+* {
+    font-family: 'Opens Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-primary-1);
+}
+
+section {
+    padding: 9% 10%;
+}
+
+.btn-default {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: #fff;
+    background-color: #4E5A63;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 26px;
+    padding: 12px 30px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.btn-default:hover {
+    background-color: #fff;
+    color: #4E5A63;
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+    
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 1.25rem;
+    border-radius: 26px;
+    text-decoration: none;
+    color: #4E5A63;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(226, 223, 223, 0.1);
+
+}
+
+.whatsApp-fixed {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 4;
+}
+
+.whatsApp-fixed img {
+    width: 60px;
+    height: auto;
+}
+
+.title {
+    font-family: "Lato", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #81726d;
+}
+
+.description {
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: #4E5A63;
+    margin-top: 4%;
+}
+
+.sub-title {
+    font-family: "Lato", sans-serif;
+    font-size: 1.95rem;
+    font-weight: 600;
+    color: #81726d;
+}
+
+img {
+    border-radius: 26px;
+}

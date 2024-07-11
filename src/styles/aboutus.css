@@ -1,0 +1,62 @@
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh + 70px);
+    background: url(/public/assets/images/peoples-working-with-stone.png) no-repeat center center;
+    background-size: cover;
+    margin-top: 0;
+}
+
+#cta {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+#cta .cta-title {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+    color: #fff;
+}
+
+#cta .cta-description {
+    width: 45%;
+    font-family: "Lora", sans-serif; 
+    font-size: 1.20rem;
+    color: #fff;
+    font-weight: 200;
+    margin-top: 2%;
+    letter-spacing: 0.5px;
+}
+
+
+#relevance_data img {
+    width: 6%;
+    height: auto;
+}
+
+#relevance_data .informations {
+    width: 100%;
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#relevance_data .informations-left, .informations-right {
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+
+#relevance_data .title {
+    width: 90%; 
+}

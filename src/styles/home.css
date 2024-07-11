@@ -1,0 +1,264 @@
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh + 70px);
+    background: url(/public/assets/images/header-house-page-home.png) no-repeat center center;
+    background-size: cover;
+    margin-top: 0;
+}
+
+#cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+#cta .cta-title {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+    color: #fff;
+}
+
+#cta .cta-description {
+    width: 75%;
+    font-family: "Lora", sans-serif; 
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 200;
+    margin-top: 1%;
+
+}
+
+#cta_buttons {
+    display: flex;
+    margin-top: 3%;
+}
+
+#cta_buttons a{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+#phone_button {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    border-radius: 26px;
+    margin-top: 40%; 
+    background-color: #fff;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#phone_button:hover {
+    box-shadow: 0px 0px 12px 8px rgba(226, 223, 223, 0.1);
+
+}
+
+.social-media-buttons {
+    margin-top: 2%;
+}
+
+
+#about_us {
+    background-color: var(--color-primary-1);
+}
+
+#about_us .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#transform {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+#transform img {
+    width: 45%;
+    border-radius: 26px;
+}
+
+#transform .texts {
+    width: 45%;
+}
+
+#transform .description {
+    width: 60%;
+    margin-top: 9%;
+}
+
+#transform .btn-default {
+    margin-top: 20%;
+}
+
+
+#moledo_stone {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+#moledo_stone .text-and-img {
+    width: 45%;
+
+}   
+
+#moledo_stone .text-and-img img {
+    width: 90%;
+    margin-top: 4%;
+}
+
+#moledo_stone .informations img {
+    width: 6%;
+    height: auto;
+}
+
+#moledo_stone .title {
+    width: 90%;
+}
+
+#moledo_stone .informations {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    width: 50%;
+}
+
+
+#perfect_stone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#perfect_stone .texts {
+    width: 40%;
+}
+
+#perfect_stone .description {
+    margin-top: 9%;
+    margin-bottom: 12%;
+}
+
+#perfect_stone a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    color: black;
+    transition: color 0.5s ease;
+    transition: font-size 0.5s ease;
+}
+
+#perfect_stone a:hover {
+    color: #81726D;
+    font-size: 1.30rem;
+    text-decoration: underline;
+}
+
+#perfect_stone img {
+    width: 50%;
+}
+
+
+#types_stones #stones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px
+}
+
+#types_stones a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 1.5px;
+    transition: color 0.5s ease ;
+    transition: font-size 0.5s ease;
+
+}
+
+#types_stones a:hover {
+    color: #81726D;
+    font-size: 1.30rem;
+    text-decoration: underline;
+}
+
+
+#contact {
+    background-color: #81726D;
+}
+
+#contact .title {
+    color: #fff;
+}
+
+#contact .informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact .description {
+    width: 50%;
+    color: #fff;
+    text-align: center;
+}
+
+#contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5%;
+}
+
+#contact .contact-inputs, .btn-send {
+    width: 30%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--color-primary-1);
+    color:#81726D;
+    border-radius: 26px;
+    transition: box-shadow 0.5s ease;
+    
+}
+
+#contact .contact-inputs:hover {
+    box-shadow: 0px 0px 14px 8px rgba(226, 223, 223, 0.3);
+    width: 30.3%;
+}
+
+#contact .btn-send {
+    padding-left: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-color: #4E5A63;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+#contact .btn-send:hover {
+    box-shadow: 0px 0px 14px 8px rgba(226, 223, 223, 0.3);
+    color: #4E5A63;
+    background-color: #fff;
+}
