@@ -57,6 +57,7 @@ header {
     #mobile_btn {
         display: block;
         border: none;
+        color: #81726d  ;
         background-color: transparent;
         font-size: 1.5rem;
         cursor: pointer;
