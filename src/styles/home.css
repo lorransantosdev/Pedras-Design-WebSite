@@ -143,7 +143,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: var(--color-primary-1);
 }
 
 #moledo_stone .text-and-img {
@@ -200,7 +200,7 @@
     }
 
     #moledo_stone .informations img {
-        width: 6%;
+        width: 9%;
     }
 }
 
@@ -210,6 +210,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
 }
 
 #perfect_stone .texts {
@@ -250,6 +251,7 @@
 
 #types_stones {
     width: 100%;
+    background-color: var(--color-primary-1);
 }
 
 #stones {
@@ -301,6 +303,7 @@
 
 #contact .title {
     color: #fff;
+    text-align: center;
 }
 
 #contact .informations {
@@ -363,11 +366,11 @@
 
 @media screen and (max-width: 1000px) {
     #contact .contact-inputs, .btn-send {
-        width: 50%;
+        width: 80%;
     }
 
     #contact .description {
-        width: 70%;
+        width: 90%;
     }
 
 }

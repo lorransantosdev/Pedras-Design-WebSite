@@ -85,4 +85,9 @@ footer .back-top {
         align-items: start;
         gap: 40px;
     }
+
+    footer .copyright img {
+        width: 9%;
+        border-radius: 0;
+    }
 }
