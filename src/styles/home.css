@@ -36,9 +36,20 @@
 
 }
 
+@media screen and (max-width: 800px) {
+    #cta .cta-title {
+        font-size: 3.5rem;
+    }
+
+    #cta .cta-description {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}
+
 #cta_buttons {
     display: flex;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 #cta_buttons a{
@@ -98,11 +109,33 @@
 
 #transform .description {
     width: 60%;
-    margin-top: 9%;
 }
 
 #transform .btn-default {
     margin-top: 20%;
+}
+
+@media screen and (max-width: 800px) {
+    #transform {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #transform img {
+        width: 60%;
+    }
+
+    #transform .texts {
+        width: auto;
+    }
+
+    #transform .description {
+        width: auto;
+    }
+
+    #transform .btn-default {
+        margin-top: 10%;
+    }
 }
 
 
@@ -140,7 +173,40 @@
 }
 
 
+@media screen and (max-width: 800px) {
+    #moledo_stone {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #moledo_stone .text-and-img {
+        width: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+    }
+
+    #moledo_stone .text-and-img img {
+        width: 60%;
+    }
+
+    #moledo_stone .text-and-img .title {
+        width: auto;
+    }
+
+    #moledo_stone .informations {
+    width: auto;
+    }
+
+    #moledo_stone .informations img {
+        width: 6%;
+    }
+}
+
+
 #perfect_stone {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,29 +221,46 @@
     margin-bottom: 12%;
 }
 
-#perfect_stone a {
-    text-decoration: none;
-    font-size: 1.05rem;
-    color: black;
-    transition: color 0.5s ease;
-    transition: font-size 0.5s ease;
-}
-
-#perfect_stone a:hover {
-    color: #81726D;
-    font-size: 1.30rem;
-    text-decoration: underline;
-}
 
 #perfect_stone img {
     width: 50%;
 }
 
 
+@media screen and (max-width: 800px) {
+    #perfect_stone {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    #perfect_stone .texts {
+        width: auto;
+    }
+
+    #perfect_stone img {
+        width: 70%;
+    }
+
+    #perfect_stone .description {
+        margin-top: 4%;
+        margin-bottom: 10%;
+    }
+}
+
+
+#types_stones {
+    width: 100%;
+}
+
+#stones {
+    list-style: none;
+}
+
 #types_stones #stones {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 15px
 }
 
@@ -189,13 +272,26 @@
     letter-spacing: 1.5px;
     transition: color 0.5s ease ;
     transition: font-size 0.5s ease;
-
 }
 
 #types_stones a:hover {
     color: #81726D;
     font-size: 1.30rem;
     text-decoration: underline;
+}
+
+
+@media screen and (max-width: 800px) {
+    #types_stones #stones .stone-line {
+        display:none
+    }
+
+    #types_stones #stones {
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+    }
 }
 
 
@@ -254,6 +350,7 @@
     font-weight: 700;
     background-color: #4E5A63;
     color: #fff;
+    cursor: pointer;
     transition: 0.5s ease;
 }
 
@@ -261,4 +358,16 @@
     box-shadow: 0px 0px 14px 8px rgba(226, 223, 223, 0.3);
     color: #4E5A63;
     background-color: #fff;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #contact .contact-inputs, .btn-send {
+        width: 50%;
+    }
+
+    #contact .description {
+        width: 70%;
+    }
+
 }
