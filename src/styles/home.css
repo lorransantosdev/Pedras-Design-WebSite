@@ -36,14 +36,36 @@
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     #cta .cta-title {
-        font-size: 3.5rem;
+        width: auto;
+        font-size: 3.2rem;
+        text-align: start;
     }
 
     #cta .cta-description {
+        width: auto;
+        padding-right: 40%;
+        margin-top: 5%;
         font-size: 1.25rem;
-        text-align: center;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #cta .cta-title {
+        width: auto;
+        font-size: 2.9rem;
+        text-align: start;
+    }
+
+    #cta .cta-description {
+        width: auto;
+        padding-right: 40%;
+        margin-top: 5%;
+        font-weight: 300;
+        font-size: 1.05rem;
+        text-align: start;
     }
 }
 
@@ -122,7 +144,7 @@
     }
 
     #transform img {
-        width: 60%;
+        width: 75%;
     }
 
     #transform .texts {
@@ -188,7 +210,7 @@
     }
 
     #moledo_stone .text-and-img img {
-        width: 60%;
+        width: 75%;
     }
 
     #moledo_stone .text-and-img .title {
@@ -200,7 +222,7 @@
     }
 
     #moledo_stone .informations img {
-        width: 9%;
+        width: 8%;
     }
 }
 
@@ -239,7 +261,7 @@
     }
 
     #perfect_stone img {
-        width: 70%;
+        width: 75%;
     }
 
     #perfect_stone .description {
@@ -293,6 +315,15 @@
         justify-content: center;
         gap: 20px;
         flex-direction: column;
+    }
+
+    #types_stones a {
+        font-size: 1.20rem;
+        letter-spacing: 1.05px;
+    }
+
+    #types_stones a:hover {
+        font-size: 1.25rem;;
     }
 }
 

@@ -92,10 +92,10 @@ section {
 
 .description {
     font-size: 1.25rem;
-    font-weight: 200;
+    font-weight: 300;
     color: #4E5A63;
     margin-top: 4%;
-    line-height: -2px;
+    line-height: -5px;
 }
 
 .sub-title {
@@ -109,12 +109,43 @@ img {
     border-radius: 26px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .title {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
     }
 
     .sub-title {
-        font-size: 1.9rem;
+        font-size: 1.3rem;
+    }
+
+    .description {
+    font-size: 0.9rem;
+    margin-top: 6%;
+    }
+
+    .btn-default {
+        padding: 8px 24px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .sub-title {
+        font-size: 1.1rem;
+    }
+
+    .description {
+    font-size: 0.9rem;
+    margin-top: 6%;
+    }
+
+    .btn-default {
+        margin-top: 10%;
+        padding: 8px 24px;
+        font-size: 0.9rem;
     }
 }
