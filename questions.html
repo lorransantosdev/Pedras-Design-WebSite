@@ -7,7 +7,7 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="src/styles/questions.css">
@@ -87,8 +87,6 @@
         </section>
 
         <section id="question_and_answer">
-
-            
             <div class="faq-container">
                 <a href="aboutus.html">Sobre a Pedras Design</a>
 
@@ -98,8 +96,157 @@
                         <i class="fa-solid fa-plus"></i> 
                     </div>
                     <div class="faq-answer">
-                        <p>Oferecemos uma ampla variedade de pedras naturais, incluindo Pedra Moledo, Rock Face, Travertino, Pedra Madeira, Pedra Mineira, Pedra Goiás, e Seixos. Cada tipo de pedra tem suas próprias características únicas, adequadas para diferentes aplicações e estilos de design.
-                        </p>
+                        <p>Oferecemos uma ampla variedade de pedras naturais, incluindo Pedra Moledo, Rock Face, Travertino, Pedra Madeira, Pedra Mineira, Pedra Goiás, e Seixos. Cada tipo de pedra tem suas próprias características únicas, adequadas para diferentes aplicações e estilos de design.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Vocês fazem projetos personalizados?</h5> 
+                        <i class="fa-solid fa-plus"></i> 
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, trabalhamos com projetos personalizados para atender às necessidades específicas de cada cliente. Nosso time de especialistas em design e construção está disponível para ajudá-lo a selecionar as pedras certas e a criar um projeto que se encaixe perfeitamente no seu espaço.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Como posso obter um orçamento para meu projeto?</h5> 
+                        <i class="fa-solid fa-plus"></i> 
+                    </div>
+                    <div class="faq-answer">
+                        <p>Para obter um orçamento, entre em contato conosco pelo telefone, WhatsApp ou e-mail. Um de nossos representantes irá discutir suas necessidades e fornecer uma estimativa detalhada com base nas especificações do seu projeto.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Qual é o prazo de entrega das pedras?</h5> 
+                        <i class="fa-solid fa-plus"></i> 
+                    </div>
+                    <div class="faq-answer">
+                        <p>O prazo de entrega varia de acordo com o tipo de pedra e a quantidade solicitada. Normalmente, o tempo de entrega é de 7 a 14 dias úteis após a confirmação do pedido. Para prazos específicos, consulte nosso atendimento.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Vocês oferecem serviço de instalação?</h5> 
+                        <i class="fa-solid fa-plus"></i> 
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, oferecemos serviços de instalação realizados por profissionais qualificados. Garantimos que a instalação será feita com a máxima qualidade e atenção aos detalhes para assegurar a durabilidade e a estética do projeto.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>As pedras são resistentes a condições climáticas extremas?</h5> 
+                        <i class="fa-solid fa-plus"></i> 
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, nossas pedras são naturalmente resistentes a diversas condições climáticas, incluindo chuva, sol intenso e variações de temperatura. Elas são ideais tanto para uso interno quanto externo.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Qual é a manutenção necessária para as pedras naturais?</h5> 
+                        <i class="fa-solid fa-plus"></i> 
+                    </div>
+                    <div class="faq-answer">
+                        <p>A manutenção das pedras naturais é relativamente simples. Recomenda-se a limpeza regular com água e sabão neutro. Evite o uso de produtos químicos agressivos que possam danificar a superfície das pedras.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Vocês oferecem garantia para as pedras?</h5> 
+                        <i class="fa-solid fa-plus"></i> 
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, oferecemos uma garantia de qualidade para todas as nossas pedras. Caso haja algum defeito de fabricação ou problemas com o material, substituiremos a pedra sem custo adicional dentro do período de garantia.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Posso ver amostras das pedras antes de fazer o pedido?</h5> 
+                        <i class="fa-solid fa-plus"></i> 
+                    </div>
+                    <div class="faq-answer">
+                        <p>Claro! Temos um showroom onde você pode ver e tocar as amostras das pedras que oferecemos. Também podemos enviar pequenas amostras para seu endereço, mediante solicitação.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Vocês oferecem suporte pós-venda?</h5> 
+                        <i class="fa-solid fa-plus"></i> 
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, oferecemos suporte pós-venda para garantir a satisfação dos nossos clientes. Nossa equipe está disponível para responder a quaisquer perguntas que você possa ter após a compra e para oferecer assistência com manutenção ou reparos, se necessário.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Quais formas de pagamento vocês aceitam?</h5> 
+                        <i class="fa-solid fa-plus"></i> 
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aceitamos diversas formas de pagamento, incluindo transferência bancária, cartão de crédito e boleto bancário. Oferecemos também condições especiais de pagamento para projetos maiores.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Vocês oferecem consultoria de design?</h5> 
+                        <i class="fa-solid fa-plus"></i> 
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, oferecemos serviços de consultoria de design para ajudá-lo a escolher as melhores pedras e a criar um layout harmonioso para seu espaço. Nossa equipe de designers está pronta para transformar suas ideias em realidade.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Como faço para agendar uma visita técnica?</h5> 
+                        <i class="fa-solid fa-plus"></i> 
+                    </div>
+                    <div class="faq-answer">
+                        <p>Para agendar uma visita técnica, entre em contato conosco pelo telefone, WhatsApp ou e-mail. Um de nossos especialistas irá marcar uma visita ao seu local para avaliar suas necessidades e fornecer orientações específicas.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>As pedras são ecologicamente corretas?</h5> 
+                        <i class="fa-solid fa-plus"></i> 
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, nos preocupamos com a sustentabilidade e garantimos que nossas pedras sejam extraídas e processadas de maneira ambientalmente responsável. Trabalhamos para minimizar o impacto ambiental em todas as etapas de produção.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Quais são os benefícios de usar pedras naturais na decoração?</h5> 
+                        <i class="fa-solid fa-plus"></i> 
+                    </div>
+                    <div class="faq-answer">
+                        <p>As pedras naturais oferecem durabilidade, beleza atemporal e versatilidade. Elas adicionam um toque de elegância e sofisticação a qualquer espaço, seja interno ou externo, e são ideais para diversas aplicações, como pisos, paredes, bancadas e áreas de lazer.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Quais são as características da Pedra Moledo e onde ela pode ser utilizada?</h5> 
+                        <i class="fa-solid fa-plus"></i> 
+                    </div>
+                    <div class="faq-answer">
+                        <p>A Pedra Moledo é conhecida por sua aparência rústica e natural, disponível em diversas cores, como branco, amarelo e champanhe. Ela é extremamente durável e resistente às intempéries, tornando-se uma excelente escolha para fachadas, muros, lareiras, áreas de lazer e paredes internas e externas. Sua versatilidade permite que ela seja utilizada em uma variedade de projetos, adicionando um toque de elegância e sofisticação a qualquer espaço.</p>
                     </div>
                 </div>
         </section>
