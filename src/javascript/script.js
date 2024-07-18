@@ -4,19 +4,8 @@ $(document).ready(function() {
         $('#mobile_btn').find('i').toggleClass('fa-x');
     });
 
-    $(window).on('scroll', function () {
-        // const header = $('header');
-        // const scrollPosition = $(window).scrollTop() - header.outerHeight();
-    });
-
     ScrollReveal().reveal('#cta', {
         origin: 'bottom',
-        duration: 1500,
-        distance: '15%'
-    });
-
-    ScrollReveal().reveal('#about_us .texts', {
-        origin: 'left',
         duration: 1500,
         distance: '15%'
     });
@@ -36,6 +25,24 @@ function toggleAnswer(element) {
       icon.classList.add('fa-minus');
     }
   }
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+
+    fetch(this.action, {
+        method: 'POST',
+        body: formData
+    }).then(response => {
+        if (response.ok) {
+            this.reset();
+            alert('Formulário enviado, em breve entraremos em contato!');
+        } else {
+            alert('Erro ao enviar!');
+        }
+    })
+});
 
 
 
