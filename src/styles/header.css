@@ -83,3 +83,15 @@ header {
     }
 
 }
+
+@media screen and (max-width: 400px) {
+    #nav_logo {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    #nav_logo {
+        width: 30px;
+    }
+}

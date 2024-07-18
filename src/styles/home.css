@@ -404,4 +404,8 @@
         width: 90%;
     }
 
+    #contact .contact-inputs:hover {
+        width: 80.3%;
+    }
+
 }
