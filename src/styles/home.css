@@ -161,6 +161,69 @@
 }
 
 
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 65%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#carousel-section .title {
+    text-align: center;
+    width: auto;
+    padding-bottom: 4%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 50%; 
+    box-sizing: border-box;
+    padding: 10px; 
+}
+
+.carousel-image img {
+    width: 100%;
+    display: block;
+    border-radius: 26px;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.carousel-control {
+    background-color: transparent;
+    border: none;
+    color: var(--color-brown-1);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .carousel-slide {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .carousel-control {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+}
+
+
 #moledo_stone {
     width: 100%;
     display: flex;
@@ -299,7 +362,7 @@
 }
 
 #types_stones a:hover {
-    color: #81726D;
+    color: var(--color-brown-1);
     font-size: 1.30rem;
     text-decoration: underline;
 }
@@ -329,7 +392,7 @@
 
 
 #contact {
-    background-color: #81726D;
+    background-color: var(--color-brown-1);
 }
 
 #contact .title {
@@ -367,7 +430,7 @@
     font-weight: 500;
     font-family: "Open Sans", sans-serif;
     background-color: var(--color-primary-1);
-    color:#81726D;
+    color:var(--color-brown-1);
     border-radius: 26px;
     transition: box-shadow 0.5s ease;
     
@@ -382,7 +445,7 @@
     padding-left: 0;
     font-size: 1.25rem;
     font-weight: 700;
-    background-color: #4E5A63;
+    background-color: var(--color-darkblue-1);
     color: #fff;
     cursor: pointer;
     transition: 0.5s ease;
@@ -390,7 +453,7 @@
 
 #contact .btn-send:hover {
     box-shadow: 0px 0px 14px 8px rgba(226, 223, 223, 0.3);
-    color: #4E5A63;
+    color: var(--color-darkblue-1);
     background-color: #fff;
 }
 

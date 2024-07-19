@@ -29,7 +29,7 @@ section {
     justify-content: center;
     border: none;
     color: #fff;
-    background-color: #4E5A63;
+    background-color: var(--color-darkblue-1);
     font-size: 1rem;
     font-family: "Open Sans", sans-serif;
     border-radius: 26px;
@@ -42,7 +42,7 @@ section {
 
 .btn-default:hover {
     background-color: #fff;
-    color: #4E5A63;
+    color: var(--color-darkblue-1);
 }
 
 .social-media-buttons {
@@ -61,7 +61,7 @@ section {
     font-size: 1.25rem;
     border-radius: 26px;
     text-decoration: none;
-    color: #4E5A63;
+    color: var(--color-darkblue-1);
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
 }
@@ -87,13 +87,13 @@ section {
     font-family: "Lato", sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #81726d;
+    color: var(--color-brown-1);
 }
 
 .description {
     font-size: 1.25rem;
     font-weight: 300;
-    color: #4E5A63;
+    color: var(--color-darkblue-1);
     margin-top: 4%;
     line-height: -5px;
 }
@@ -102,7 +102,7 @@ section {
     font-family: "Lato", sans-serif;
     font-size: 1.95rem;
     font-weight: 600;
-    color: #81726d;
+    color: var(--color-brown-1);
 }
 
 img {

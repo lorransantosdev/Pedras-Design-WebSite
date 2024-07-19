@@ -4,7 +4,7 @@
   align-items: center;
   width: 100%;
   min-height: calc(55vh + 70px);
-  background-color: #81726d;
+  background-color: var(--color-brown-1);
 }
 
 #cta {
@@ -67,7 +67,7 @@
 
 .faq-container a {
   text-decoration: none;
-  color: #81726d;
+  color: var(--color-brown-1);
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 3%;
@@ -121,6 +121,6 @@
 .faq-answer p {
   font-size: 1.1rem;
   font-weight: 300;
-  color: #4E5A63;
+  color: var(--color-darkblue-1);
   line-height: -5px;
 }
