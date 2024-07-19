@@ -45,4 +45,48 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 });
 
 
+let currentSlide = 0;
+let autoSlideInterval;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const totalSlides = slides.length;
+
+    if (index >= totalSlides) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = totalSlides - 1;
+    } else {
+        currentSlide = index;
+    }
+
+    const offset = -currentSlide * 100 / 2;
+    document.querySelector('.carousel-track').style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+function startAutoSlide() {
+    autoSlideInterval = setInterval(nextSlide, 1500); 
+}
+
+function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+}
+
+
+showSlide(currentSlide);
+startAutoSlide();
+
+const carouselContainer = document.querySelector('.carousel-container');
+carouselContainer.addEventListener('mouseover', stopAutoSlide);
+carouselContainer.addEventListener('mouseout', startAutoSlide);
+
+
 
