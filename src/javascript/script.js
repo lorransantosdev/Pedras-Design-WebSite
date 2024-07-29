@@ -51,16 +51,18 @@ let autoSlideInterval;
 function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-slide');
     const totalSlides = slides.length;
-
-    if (index >= totalSlides) {
+    const isMobile = window.innerWidth <= 800;
+    const slidesToShow = isMobile ? 1 : 2;
+    
+    if (index >= totalSlides / slidesToShow) {
         currentSlide = 0;
     } else if (index < 0) {
-        currentSlide = totalSlides - 1;
+        currentSlide = totalSlides / slidesToShow - 1;
     } else {
         currentSlide = index;
     }
 
-    const offset = -currentSlide * 100 / 2;
+    const offset = -currentSlide * 100 / slidesToShow;
     document.querySelector('.carousel-track').style.transform = `translateX(${offset}%)`;
 }
 
@@ -73,20 +75,21 @@ function prevSlide() {
 }
 
 function startAutoSlide() {
-    autoSlideInterval = setInterval(nextSlide, 1500); 
+    autoSlideInterval = setInterval(nextSlide, 2500);
 }
 
 function stopAutoSlide() {
     clearInterval(autoSlideInterval);
 }
 
-
 showSlide(currentSlide);
 startAutoSlide();
 
-const carouselContainer = document.querySelector('.carousel-container');
+const carouselContainer = document.querySelector('.carousel-track');
 carouselContainer.addEventListener('mouseover', stopAutoSlide);
 carouselContainer.addEventListener('mouseout', startAutoSlide);
+
+window.addEventListener('resize', () => showSlide(currentSlide));
 
 
 

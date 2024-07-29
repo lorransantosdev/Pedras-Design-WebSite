@@ -177,11 +177,11 @@
 
 .carousel-track {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.8s ease-in-out;
 }
 
 .carousel-slide {
-    min-width: 50%; 
+    min-width: 50%; /* Cada slide ocupa 50% da largura do carrossel no desktop */
     box-sizing: border-box;
     padding: 10px; 
 }
@@ -209,10 +209,15 @@
     margin: 0 5px;
 }
 
-
+/* Responsividade */
 @media screen and (max-width: 800px) {
     .carousel-slide {
-        min-width: 100%;
+        min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel em telas menores */
+        padding: 15px; /* Remover espaçamento entre os slides no modo mobile */
+    }
+
+    .carousel-image img {
+        border-radius: 26px; /* Remover bordas arredondadas no modo mobile para evitar espaços visíveis */
     }
 }
 
@@ -220,6 +225,14 @@
     .carousel-control {
         font-size: 1.5rem;
         padding: 5px;
+    }
+
+    .carousel-container {
+        width: 100%;
+    }
+
+    .carousel-image img {
+        width: 100%;
     }
 }
 
