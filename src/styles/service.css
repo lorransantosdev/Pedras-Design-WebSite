@@ -358,7 +358,7 @@
     justify-content: start;
     align-items: center;
     width: 100%;
-    min-height: calc(100vh + 70px);
+    min-height: calc(80vh);
     background: url('../../public/assets/images/hands-end-service.png') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
@@ -377,16 +377,11 @@
 @media screen and (max-width: 800px) {
     #contract {
         min-height: calc(55vh);
+        background-attachment: scroll;
     }
 
     #contract .texts {
         width: auto;
 
-    }
-}
-
-@media screen and (max-width: 400px) {
-    #contract {
-        background-attachment: scroll;
     }
 }
