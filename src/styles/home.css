@@ -10,6 +10,12 @@
     margin-top: 0;
 }
 
+@media screen and (max-width: 400px) {
+    #home {
+        background-attachment: scroll;
+    }
+}
+
 .nav-item-1 a{
     color: var(--color-darkblue-1);
     border-bottom: 3px solid var(--color-brown-1);
