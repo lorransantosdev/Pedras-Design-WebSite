@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedras Design</title>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/service.css">
+
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html"><img id="nav_logo" src="public/assets/images/icone-logotipo-pedras-design-transparente.svg" alt="Logotipo da Pedras Design"></a>
+
+            <ul id="nav_list">
+                <li class="nav-item nav-item-1 active">
+                    <a href="index.html">INÍCIO</a>
+                </li>
+
+                <li class="nav-item nav-item-2">
+                    <a href="aboutus.html">SOBRE NÓS</a>
+                </li>
+
+                <li class="nav-item nav-item-3">
+                    <a href="#home">SERVIÇOS</a>
+                </li>
+                
+                <li class="nav-item nav-item-4">
+                    <a href="#gallery">GALERIA</a>
+                </li>
+
+                <li class="nav-item nav-item-5">
+                    <a href="questions.html">PERGUNTAS</a>
+                </li>
+            </ul>
+
+            <button class="btn-default" onclick="window.open('https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!', '_blank')">
+                Fale Conosco
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="aboutus.html">Sobre Nós</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#home">Serviços</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#gallery">Galeria</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="questions.html">Perguntas</a>
+                </li>
+
+            <button class="btn-default" onclick="window.open('https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!', '_blank')">
+                    Fale Conosco
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div id="cta">
+                <h1 class="cta-title">
+                    Nossos Serviços   
+                </h1>
+
+                <h2 class="cta-description">
+                    Descubra como nossos processos garantem qualidade e precisão em cada etapa do seu projeto. Conheça nossos serviços!
+                </h2>
+
+                <div id="cta_buttons">
+                    <a href="tel:+5511950697643" id="phone_button">
+                        <i class="fa-solid fa-phone"></i>
+                        (11) 95069-7643
+                    </a>
+
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/pedrasdesign" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="to-know">
+            <div class="texts">
+                <h3 class="title">
+                    Conheça todo o processo
+                </h3>
+
+                <p class="description">
+                    Na Pedras Design, oferecemos uma variedade de serviços para transformar seu espaço com a beleza das pedras naturais. Desde o planejamento até a execução, estamos comprometidos com a excelência em cada etapa do processo.
+                </p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="services_process">
+            <div class="informations item-1">
+                <img class="large" src="public/assets/images/wall-stone-process-service.png" alt="Projeto de área externa com parede de pedras naturais">
+
+                <div class="img-texts">
+                    <img src="public/assets/images/icon-budget.svg" alt="Icone de um orçamento">
+                    <div class="texts">
+                        <h4 class="sub-title">
+                            Orçamento e Amostras de Material
+                        </h4>
+                        <p class="description">
+                            Oferecemos orçamentos detalhados e amostras de materiais para garantir que você planeje seu projeto com precisão e confiança, assegurando a melhor escolha para seu ambiente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="informations item-2">
+                <img class="large" src="public/assets/images/transport-stone-process-service.png" alt="Caminhão com pedra">
+
+                <div class="img-texts">
+                    <img src="public/assets/images/icon-car.svg" alt="Icone de transporte">
+                    <div class="texts">
+                        <h4 class="sub-title">
+                            Transporte Seguro
+                        </h4>
+                        <p class="description">
+                            Oferecemos um serviço de transporte seguro, cuidando de todas as etapas logísticas para que as pedras cheguem ao destino em perfeitas condições. Sabemos da importância de preservar a integridade dos materiais, e por isso, tratamos cada entrega com o máximo cuidado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="informations item-3">
+                <img class="large" src="public/assets/images/implantation-stone-wall-process-service.png" alt="Implatação das pedras na parede">
+
+                <div class="img-texts">
+                    <img src="public/assets/images/icon-implantation.svg" alt="Icone de instalação">
+                    <div class="texts">
+                        <h4 class="sub-title">
+                            Instalação Profissional
+                        </h4>
+                        <p class="description">
+                            Nossa equipe altamente qualificada cuida de todos os detalhes da instalação, garantindo que cada pedra seja colocada com perfeição. Seja para fachadas, muros, lareiras ou áreas de lazer, nossa expertise assegura um acabamento impecável.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="informations item-4">
+                <img class="large" src="public/assets/images/pos-implantation-process-service.png" alt="Parede de pedras">
+
+                <div class="img-texts">
+                    <img src="public/assets/images/icon-orientation.svg" alt="Icone uma pessoa ensinando">
+                    <div class="texts">
+                        <h4 class="sub-title">
+                            Acompanhamento Pós-Instalação
+                        </h4>
+                        <p class="description">
+                            Nosso compromisso não termina com a instalação. Oferecemos suporte pós-instalação para garantir que você esteja completamente satisfeito com o resultado. Estamos disponíveis para orientá-lo sobre manutenção e cuidados, assegurando que seu projeto mantenha sua beleza e durabilidade ao longo do tempo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="guarantee">
+            <img src="public/assets/images/icon-guarantee.svg" alt="Icone de garantia">
+
+            <div class="texts">
+                <h3 class="title">
+                    Garantia
+                </h3>
+
+                <p class="description">
+                    Entendemos a importância de garantir que o cliente esteja plenamente consciente da qualidade dos materiais utilizados, por isso sempre entregamos amostras das pedras para que possa ser possível ver os detalhes, qualidade e especificações do material.
+                </p>
+            </div>
+        </section>
+
+        <section id="types_stones">
+            <ul id="stones">
+                <li class="stone-item"><a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!" target="_blank">Pedra Moledo</a></li>
+
+                <li class="stone-line"> - </li>
+
+                <li class="stone-item"><a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!" target="_blank">Rock Face</a></li>
+
+                <li class="stone-line"> - </li>
+
+                <li class="stone-item"><a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!" target="_blank"">Travertino</a></li>
+
+                <li class="stone-line"> - </li>
+
+                <li class="stone-item"><a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!" target="_blank">Pedra Madeira</a></li>
+
+                <li class="stone-line"> - </li>
+
+                <li class="stone-item"><a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!" target="_blank">Pedra Mineira</a></li>
+
+                <li class="stone-line"> - </li>
+
+                <li class="stone-item"><a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!" target="_blank">Pedra Goiás</a></li>
+
+                <li class="stone-line"> - </li>
+
+                <li class="stone-item"><a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!" target="_blank">Seixos</a></li>
+            </ul>
+        </section>
+
+
+        <section id="contact">
+            <div class="informations">
+                <h3 class="title">
+                    Entre em contato conosco!
+                </h3>
+
+                <p class="description">
+                    Orçamos o seu projeto de forma ágil e personalizada!
+                </p>
+
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="01f7152f-1bc5-49a3-8db3-cacff83ee3a5">
+                    <input type="text" name="name" placeholder="Seu nome" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="E-mail" class="contact-inputs" required>
+                    <input type="tel" name="tel" placeholder="Celular" class="contact-inputs" required>
+                    <input type="text" name="message" placeholder="Escreva uma mensagem" class="contact-inputs" required>
+                    <button class="btn-send" type="submit">ENVIAR</button>
+
+            </div>
+        </section>
+
+
+        <section id="contract">
+            <div class="texts">
+                <p class="description">Garanta a qualidade e a precisão que seu projeto merece. Estamos prontos para transformar suas ideias em realidade com as pedras naturais.</p>
+
+                <button class="btn-default" onclick="window.open('https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!', '_blank')">
+                    Saiba mais
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer_content">
+        <div class="informations">
+            <div class="menu">
+                <p class="title">
+                    Explore
+                </p>
+
+                <ul id="menu_list">
+                    <li class="menu-item active">
+                        <a href="index.html">Início</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="aboutus.html">Sobre Nós</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#home">Serviços</a>
+                    </li>
+                    
+                    <li class="menu-item">
+                        <a href="#gallery">Galeria</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="questions.html">Perguntas</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contacts">
+                <p class="title">
+                    Fale com a gente
+                </p>
+
+                <a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!" target="_blank" class="number-tel">
+                    (11) 95069-7643
+                </a>
+
+                <a href="mailto:pedrasdesign@bol.com.br" target="_blank" class="email">
+                    pedrasdesign@bol.com.br
+                </a>
+
+                <p>Atendimento das 7h às 21hs (dias utéis)</p>
+            </div>
+
+            <div class="media-buttons">
+                <div class="social-media-buttons">
+                    <a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/pedrasdesign" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="mailto:pedrasdesign@bol.com.br" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <img src="public/assets/images/icone-logotipo-pedras-design-transparente.svg" alt="Logotipo da Pedras Design">
+
+            <p>&copy; 2021 Pedras Design. Todos os direitos reservados.</p>
+        </div>
+
+        <a href="#home" class="back-top">Voltar ao topo</a>
+    </footer>
+
+    <div class="whatsApp-fixed">
+        <a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!" target="_blank">
+            <img src="public/assets/images/whatsapp-fixed.svg" alt="WhatsApp">
+        </a>
+    </div>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>

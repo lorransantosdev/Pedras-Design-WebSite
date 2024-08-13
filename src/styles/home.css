@@ -6,7 +6,13 @@
     min-height: calc(100vh + 70px);
     background: url('../../public/assets/images/header-house-page-home.png') no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
     margin-top: 0;
+}
+
+.nav-item-1 a{
+    color: var(--color-darkblue-1);
+    border-bottom: 3px solid var(--color-brown-1);
 }
 
 #cta {
@@ -181,7 +187,7 @@
 }
 
 .carousel-slide {
-    min-width: 50%; /* Cada slide ocupa 50% da largura do carrossel no desktop */
+    min-width: 50%;
     box-sizing: border-box;
     padding: 10px; 
 }
@@ -209,15 +215,15 @@
     margin: 0 5px;
 }
 
-/* Responsividade */
+
 @media screen and (max-width: 800px) {
     .carousel-slide {
-        min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel em telas menores */
-        padding: 15px; /* Remover espaçamento entre os slides no modo mobile */
+        min-width: 100%; 
+        padding: 15px; 
     }
 
     .carousel-image img {
-        border-radius: 26px; /* Remover bordas arredondadas no modo mobile para evitar espaços visíveis */
+        border-radius: 26px; 
     }
 }
 
