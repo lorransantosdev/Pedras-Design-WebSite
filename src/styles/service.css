@@ -1,0 +1,380 @@
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh + 70px);
+    background: url('../../public/assets/images/header-wall-page-service.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0;
+}
+
+.nav-item-3 a{
+    color: var(--color-darkblue-1);
+    border-bottom: 3px solid var(--color-brown-1);
+  }
+
+#cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+#cta .cta-title {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+    color: #fff;
+}
+
+#cta .cta-description {
+    width: 75%;
+    font-family: "Lora", sans-serif; 
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 200;
+    margin-top: 1%;
+
+}
+
+@media screen and (max-width: 850px) {
+    #cta .cta-title {
+        width: auto;
+        font-size: 3.2rem;
+        text-align: start;
+    }
+
+    #cta .cta-description {
+        width: auto;
+        padding-right: 40%;
+        margin-top: 5%;
+        font-size: 1.25rem;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #cta .cta-title {
+        width: auto;
+        font-size: 2.9rem;
+        text-align: start;
+    }
+
+    #cta .cta-description {
+        width: auto;
+        padding-right: 40%;
+        margin-top: 5%;
+        font-weight: 300;
+        font-size: 1.05rem;
+        text-align: start;
+    }
+}
+
+#cta_buttons {
+    display: flex;
+    margin-top: 2%;
+}
+
+#cta_buttons a{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+#phone_button {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    border-radius: 26px;
+    margin-top: 40%; 
+    background-color: #fff;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#phone_button:hover {
+    box-shadow: 0px 0px 12px 8px rgba(226, 223, 223, 0.1);
+
+}
+
+.social-media-buttons {
+    margin-top: 2%;
+}
+
+#to-know {
+    background-color: var(--color-white-1);
+}
+
+#services_process .informations {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 15%;
+}
+
+#services_process .item-1{
+    flex-direction: row-reverse;
+}
+
+#services_process .informations .large {
+    width: 50%;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+#services_process .img-texts {
+    width: 45%;
+    display: flex;
+    flex-direction: column; 
+}
+
+#services_process .img-texts img {
+    width: 9%;
+    height: auto;
+    border-radius: 0;
+    margin-bottom: 9%;   
+}
+
+#services_process .item-3{
+    flex-direction: row-reverse;
+}
+
+#services_process .item-4{
+    padding-bottom: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+    #services_process .informations {
+        width: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+    }
+
+    #services_process .informations .large {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #services_process .img-texts {
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+    }
+
+}
+
+
+#guarantee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-white-1);
+}
+
+#guarantee img {
+    width: 7%;
+    height: auto;
+    border-radius: 0;
+    margin-bottom: 4%;  
+}
+
+#guarantee .texts {
+    width: 70%;
+    text-align: center;
+}
+
+#guarantee .texts p {
+    text-align: start;
+}
+
+@media screen and (max-width: 800px) {
+    #guarantee .texts{
+        width: auto;
+        text-align: center;
+    }
+
+    #guarantee .texts p {
+        text-align: center;
+    }
+}
+
+
+#types_stones {
+    width: 100%;
+    background-color: var(--color-primary-1);
+}
+
+#stones {
+    list-style: none;
+}
+
+#types_stones #stones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px
+}
+
+#types_stones a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 1.5px;
+    transition: color 0.5s ease ;
+    transition: font-size 0.5s ease;
+}
+
+#types_stones a:hover {
+    color: var(--color-brown-1);
+    font-size: 1.30rem;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 800px) {
+    #types_stones #stones .stone-line {
+        display:none
+    }
+
+    #types_stones #stones {
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    #types_stones a {
+        font-size: 1.20rem;
+        letter-spacing: 1.05px;
+    }
+
+    #types_stones a:hover {
+        font-size: 1.25rem;;
+    }
+}
+
+
+#contact {
+    background-color: var(--color-brown-1);
+}
+
+#contact .title {
+    color: #fff;
+    text-align: center;
+}
+
+#contact .informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact .description {
+    width: 50%;
+    color: #fff;
+    text-align: center;
+}
+
+#contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5%;
+}
+
+#contact .contact-inputs, .btn-send {
+    width: 30%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--color-primary-1);
+    color:var(--color-brown-1);
+    border-radius: 26px;
+    transition: box-shadow 0.5s ease;
+    
+}
+
+#contact .contact-inputs:hover {
+    box-shadow: 0px 0px 14px 8px rgba(226, 223, 223, 0.3);
+    width: 30.3%;
+}
+
+#contact .btn-send {
+    padding-left: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-color: var(--color-darkblue-1);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#contact .btn-send:hover {
+    box-shadow: 0px 0px 14px 8px rgba(226, 223, 223, 0.3);
+    color: var(--color-darkblue-1);
+    background-color: #fff;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #contact .contact-inputs, .btn-send {
+        width: 80%;
+    }
+
+    #contact .description {
+        width: 90%;
+    }
+
+    #contact .contact-inputs:hover {
+        width: 80.3%;
+    }
+
+}
+
+
+#contract {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh + 70px);
+    background: url('../../public/assets/images/hands-end-service.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0;
+}
+
+#contract .texts {
+    width: 70%;
+}
+
+#contract .description {
+    color: var(--color-white-1);
+    padding-bottom: 10%;
+}
+
+@media screen and (max-width: 800px) {
+    #contract {
+        min-height: calc(55vh);
+    }
+
+    #contract .texts {
+        width: auto;
+
+    }
+}

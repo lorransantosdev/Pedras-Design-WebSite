@@ -6,7 +6,13 @@
     min-height: calc(100vh + 70px);
     background: url('../../public/assets/images/peoples-working-with-stone.png') no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
     margin-top: 0;
+}
+
+.nav-item-2 a{
+    color: var(--color-darkblue-1);
+    border-bottom: 3px solid var(--color-brown-1);
 }
 
 #cta {
