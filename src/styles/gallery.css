@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     min-height: calc(100vh + 70px);
-    background: url('../../public/assets/images/header-wall-page-service.png') no-repeat center center;
+    background: url('../../public/assets/images/header-page-gallery.png') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     margin-top: 0;
@@ -16,10 +16,10 @@
     }
 }
 
-.nav-item-3 a{
+.nav-item-4 a{
     color: var(--color-darkblue-1);
     border-bottom: 3px solid var(--color-brown-1);
-  }
+}
 
 #cta {
     display: flex;
@@ -45,22 +45,21 @@
     color: #fff;
     font-weight: 200;
     margin-top: 1%;
-
+    text-align: center;
 }
 
 @media screen and (max-width: 850px) {
     #cta .cta-title {
         width: auto;
         font-size: 3.2rem;
-        text-align: start;
+        text-align: center;
     }
 
     #cta .cta-description {
         width: auto;
-        padding-right: 40%;
         margin-top: 5%;
         font-size: 1.25rem;
-        text-align: start;
+        text-align: center;
     }
 }
 
@@ -68,16 +67,15 @@
     #cta .cta-title {
         width: auto;
         font-size: 2.9rem;
-        text-align: start;
+        text-align: center;
     }
 
     #cta .cta-description {
         width: auto;
-        padding-right: 40%;
         margin-top: 5%;
         font-weight: 300;
         font-size: 1.05rem;
-        text-align: start;
+        text-align: center;
     }
 }
 
@@ -113,162 +111,141 @@
     margin-top: 2%;
 }
 
-#to-know {
-    background-color: var(--color-white-1);
+
+#introduction .texts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-#services_process .informations {
+#introduction .description {
+    text-align: justify;
+    width: 80%;
+}
+
+
+#full_img1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh);
+    background: url('../../public/assets/images/full-img-page-gallery.png') no-repeat center center;
+    background-size: cover;
+    filter: brightness(50%);
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    #full_img1 {
+        min-height: calc(55vh);
+    }
+}
+
+
+#show_photos .informations {
     display: flex;
     justify-content: space-between;
-    align-items: start;
-    padding-bottom: 15%;
+    align-items: center;    
 }
 
-#services_process .item-1{
+#show_photos .item-1, .item-3{
     flex-direction: row-reverse;
 }
 
-#services_process .informations .large {
-    width: 50%;
+
+#show_photos .informations .large {
+    width: 40%;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
-#services_process .img-texts {
+#show_photos .img-texts {
     width: 45%;
     display: flex;
     flex-direction: column; 
 }
 
-#services_process .img-texts img {
-    width: 9%;
-    height: auto;
-    border-radius: 0;
-    margin-bottom: 9%;   
+#show_photos .description {
+    width: 50%;
 }
 
-#services_process .item-3{
-    flex-direction: row-reverse;
-}
-
-#services_process .item-4{
-    padding-bottom: 0;
+#show_photos .btn-default {
+    margin-top: 20%;
 }
 
 
 @media screen and (max-width: 800px) {
-    #services_process .informations {
+    #show_photos .informations {
         width: auto;
         flex-direction: column-reverse;
         align-items: center;
         gap: 40px;
     }
 
-    #services_process .informations .large {
-        width: 90%;
+    #show_photos .informations .large {
+        width: 60%;
         display: flex;
         justify-content: center;
     }
     
-    #services_process .img-texts {
+    #show_photos .img-texts {
         width: 100%;
         display: flex;
         flex-direction: column; 
     }
 
+    #show_photos .texts {
+        width: 100%;
+    }
+
+    #show_photos .description {
+        width: 100%;
+    }
+
+    #show_photos .btn-default {
+        margin-top: 10%;
+    }
+
 }
 
 
-#guarantee {
+#full_img2 {
     display: flex;
-    flex-direction: column;
+    justify-content: start;
     align-items: center;
-    background-color: var(--color-white-1);
+    width: 100%;
+    min-height: calc(100vh);
+    background: url('../../public/assets/images/full-img-2-page-gallery.png') no-repeat center center;
+    background-size: cover;
+    filter: brightness(50%);
+    margin-top: 0;
 }
 
-#guarantee img {
-    width: 7%;
-    height: auto;
-    border-radius: 0;
-    margin-bottom: 4%;  
-}
-
-#guarantee .texts {
-    width: 70%;
-    text-align: center;
-}
-
-#guarantee .texts p {
-    text-align: start;
-}
-
-@media screen and (max-width: 800px) {
-    #guarantee .texts{
-        width: auto;
-        text-align: center;
-    }
-
-    #guarantee .texts p {
-        text-align: center;
+@media screen and (max-width: 1000px) {
+    #full_img2 {
+        min-height: calc(55vh);
     }
 }
 
 
-#types_stones {
-    width: 100%;
-    background-color: var(--color-primary-1);
-}
-
-#stones {
-    list-style: none;
-}
-
-#types_stones #stones {
-    width: 100%;
+#full_img3 {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    gap: 15px
+    width: 100%;
+    min-height: calc(100vh);
+    background: url('../../public/assets/images/full-img-2-page-gallery.png') no-repeat center center;
+    background-size: cover;
+    filter: brightness(50%);
+    margin-top: 0;
 }
 
-#types_stones a {
-    font-size: 1.2rem;
-    text-decoration: none;
-    font-weight: 500;
-    color: black;
-    letter-spacing: 1.5px;
-    transition: color 0.5s ease ;
-    transition: font-size 0.5s ease;
-}
-
-#types_stones a:hover {
-    color: var(--color-brown-1);
-    font-size: 1.30rem;
-    text-decoration: underline;
-}
-
-
-@media screen and (max-width: 800px) {
-    #types_stones #stones .stone-line {
-        display:none
-    }
-
-    #types_stones #stones {
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        flex-direction: column;
-    }
-
-    #types_stones a {
-        font-size: 1.20rem;
-        letter-spacing: 1.05px;
-    }
-
-    #types_stones a:hover {
-        font-size: 1.25rem;;
+@media screen and (max-width: 1000px) {
+    #full_img3 {
+        min-height: calc(55vh);
     }
 }
-
 
 #contact {
     background-color: var(--color-brown-1);
@@ -350,38 +327,4 @@
         width: 80.3%;
     }
 
-}
-
-
-#contract {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-    min-height: calc(80vh);
-    background: url('../../public/assets/images/hands-end-service.png') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: 0;
-}
-
-#contract .texts {
-    width: 70%;
-}
-
-#contract .description {
-    color: var(--color-white-1);
-    padding-bottom: 10%;
-}
-
-@media screen and (max-width: 1000px) {
-    #contract {
-        min-height: calc(55vh);
-        background-attachment: scroll;
-    }
-
-    #contract .texts {
-        width: auto;
-
-    }
 }
