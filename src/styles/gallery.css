@@ -3,9 +3,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: calc(100vh + 70px);
+    min-height: calc(100vh);
     background: url('../../public/assets/images/header-page-gallery.png') no-repeat center center;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     margin-top: 0;
 }
@@ -217,7 +217,7 @@
     width: 100%;
     min-height: calc(100vh);
     background: url('../../public/assets/images/full-img-2-page-gallery.png') no-repeat center center;
-    background-size: contain;
+    background-size: cover;
     filter: brightness(50%);
     margin-top: 0;
 }
@@ -236,7 +236,7 @@
     width: 100%;
     min-height: calc(100vh);
     background: url('../../public/assets/images/full-img-2-page-gallery.png') no-repeat center center;
-    background-size: contain;
+    background-size: cover;
     filter: brightness(50%);
     margin-top: 0;
 }
