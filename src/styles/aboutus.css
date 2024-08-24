@@ -6,11 +6,10 @@
     min-height: calc(100vh);
     background: url('../../public/assets/images/peoples-working-with-stone.png') no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;
     margin-top: 0;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     #home {
         background-attachment: scroll;
     }
