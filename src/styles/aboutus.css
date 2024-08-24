@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: calc(100vh);
+    min-height: calc(100vh + 70px);
     background: url('../../public/assets/images/peoples-working-with-stone.png') no-repeat center center;
     background-size: cover;
     margin-top: 0;
